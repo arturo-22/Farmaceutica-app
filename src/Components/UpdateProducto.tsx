@@ -23,7 +23,7 @@ const UpdateProducto = () => {
 
   const inputChangeValue = (event: ChangeEvent<HTMLInputElement>) => {
     const inputName = event.target.name;
-    const inputValue = event.target.value;
+    const inputValue = event.target.value.toUpperCase();
 
     setProducto({ ...producto, [inputName]: inputValue });
   };
